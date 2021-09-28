@@ -1,8 +1,9 @@
 package com.example.testspacex.model
 
+import androidx.room.Entity
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable
-
+@Entity(tableName = "spacexdatatable")
 data class SpaceXModelItem(
 
     @SerializedName("country") val country: String?,
